@@ -1,19 +1,43 @@
-# mlb-baseball-replay
+#  MLB Visual Game Replay
 
-定时生成并发布 MLB 比赛回放页面到 GitHub Pages。
+> ⚾ No time to watch a full MLB baseball game? Relive how it unfolded, with the suspense of its biggest moments preserved.
 
+Relive completed MLB games through interactive play-by-play pages, with pitch and batted-ball visualizations and progressive reveals at key moments.
 
-## Rendered Page Features
+[Browse recent games](https://mlb-visual-game-replay.win)
 
-页面核心是单场比赛的 play-by-play 回放，主要包含：
+## Features
 
-- 按半局分段展示（Top/Bottom + 局数）
-- 每个打席的结果徽章与事件描述
-- 盗垒、换投、代打、代跑、runner out 等过程事件
-- 打席前状态信息（垒包占用、出局数、当前比分）
-- 关键节点后的状态条（base/out/score chip）
-- 打者与投手面板：
-  - 头像、姓名、守位/投手左右手信息
-  - 打席前累计数据（如 AB/H、P/IP、ER/H/K/BB）
-  - 打者近期事件标签
-- 点击球员头像可跳转到 Baseball Savant 球员详情页
+### Game Browsing
+
+- Browse completed games from the past 14 days.
+- See matchups, venues, and starting pitchers without revealing final scores.
+- View starting pitchers and batting lineups before following the game.
+
+### Interactive Play-by-Play
+
+- See base occupancy, outs, and the current score as the game progresses.
+- Reveal key plate appearance outcomes progressively, keeping later action hidden until you continue.
+- Advance one plate appearance at a time or fast-forward to the next key plate appearance.
+
+### Pitch and Batted-Ball Details
+
+- Explore pitch locations on a strike-zone chart.
+- Review pitch sequences with counts, velocity, pitch types, and results.
+- View batted-ball location and direction on a field diagram.
+- See exit velocity, launch angle, and distance where available.
+- Read supporting fielding and baserunning details.
+
+### Player Context
+
+- View batter and pitcher portraits, positions, and handedness.
+- Follow in-game statistics accumulated before each plate appearance.
+- See each batter’s earlier results in the game.
+- Open Baseball Savant player profiles by clicking player portraits.
+
+### Postgame Summary
+
+- Review the final inning-by-inning line score, including runs, hits, and errors.
+- See top performers and their game statistics.
+- Switch between away and home team batting and pitching box scores.
+- Review team totals, game notes, and additional game information.
