@@ -1,28 +1,117 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MLB Replay Index</title>
+    <link rel="alternate" type="application/rss+xml" title="MLB Visual Game Replay — All games" href="https://mlb-visual-game-replay.win/feeds/all.xml">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen bg-gray-100 py-10 font-sans text-gray-900">
     <main class="mx-auto max-w-4xl px-4">
         <header class="mb-8 rounded-2xl bg-white p-6 shadow-sm">
             <h1 class="text-3xl font-black">MLB Replay</h1>
-            <p class="mt-2 text-sm text-gray-600">最近两周已完成比赛</p>
-            <p class="mt-1 text-xs text-gray-500">Generated at 2026-10-05 01:35 UTC</p>
+            <p class="mt-2 text-sm text-gray-600">Completed games from the past two weeks</p>
+            <p class="mt-1 text-xs text-gray-500">Generated at <time datetime="2026-10-05T02:45:44.825602+00:00">2026-10-05 02:45 UTC</time><span data-local-time="2026-10-05T02:45:44.825602+00:00"></span></p>
+            <details class="mt-5 border-t border-gray-100 pt-4">
+                <summary class="w-fit cursor-pointer text-sm font-semibold text-orange-700">RSS Subscribe</summary>
+                <div class="mt-4 rounded-xl bg-gray-50 p-4">
+                    <p class="text-sm text-gray-700">Subscribe to all games or follow your favorite team in your RSS reader.</p>
+                    <div class="mt-3 flex flex-col gap-3 sm:flex-row sm:items-end">
+                        <div class="min-w-0 flex-1">
+                            <label for="rss-scope" class="mb-1 block text-xs font-semibold text-gray-600">Games to follow</label>
+                            <select id="rss-scope" class="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm">
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/all.xml">All games</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/ari.xml">Arizona Diamondbacks</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/atl.xml">Atlanta Braves</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/ath.xml">Athletics</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/bal.xml">Baltimore Orioles</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/bos.xml">Boston Red Sox</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/chc.xml">Chicago Cubs</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/cws.xml">Chicago White Sox</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/cin.xml">Cincinnati Reds</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/cle.xml">Cleveland Guardians</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/col.xml">Colorado Rockies</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/det.xml">Detroit Tigers</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/hou.xml">Houston Astros</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/kc.xml">Kansas City Royals</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/laa.xml">Los Angeles Angels</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/lad.xml">Los Angeles Dodgers</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/mia.xml">Miami Marlins</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/mil.xml">Milwaukee Brewers</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/min.xml">Minnesota Twins</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/nym.xml">New York Mets</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/nyy.xml">New York Yankees</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/phi.xml">Philadelphia Phillies</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/pit.xml">Pittsburgh Pirates</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/sd.xml">San Diego Padres</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/sea.xml">Seattle Mariners</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/sf.xml">San Francisco Giants</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/stl.xml">St. Louis Cardinals</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/tb.xml">Tampa Bay Rays</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/tex.xml">Texas Rangers</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/tor.xml">Toronto Blue Jays</option>
+                                
+                                <option value="https://mlb-visual-game-replay.win/feeds/wsh.xml">Washington Nationals</option>
+                                
+                            </select>
+                        </div>
+                        <button type="button" id="rss-copy" class="rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white">Copy feed URL</button>
+                        <a id="rss-open" href="feeds/all.xml" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-semibold text-gray-700">Open feed</a>
+                    </div>
+                    <label for="rss-url" class="mt-3 block text-xs font-semibold text-gray-600">Feed URL</label>
+                    <input id="rss-url" readonly value="https://mlb-visual-game-replay.win/feeds/all.xml" class="mt-1 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-600">
+                    <p id="rss-status" role="status" class="mt-2 text-xs text-gray-600"></p>
+                    <p class="mt-2 text-xs text-gray-500">No scores or results in the feed. Replay pages are available for 14 days.</p>
+                    <noscript>
+                        <p class="mt-3 text-sm">Choose a feed below:</p>
+                        <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-xs underline">
+                            <li><a href="feeds/all.xml">All games</a></li><li><a href="feeds/ari.xml">Arizona Diamondbacks</a></li><li><a href="feeds/atl.xml">Atlanta Braves</a></li><li><a href="feeds/ath.xml">Athletics</a></li><li><a href="feeds/bal.xml">Baltimore Orioles</a></li><li><a href="feeds/bos.xml">Boston Red Sox</a></li><li><a href="feeds/chc.xml">Chicago Cubs</a></li><li><a href="feeds/cws.xml">Chicago White Sox</a></li><li><a href="feeds/cin.xml">Cincinnati Reds</a></li><li><a href="feeds/cle.xml">Cleveland Guardians</a></li><li><a href="feeds/col.xml">Colorado Rockies</a></li><li><a href="feeds/det.xml">Detroit Tigers</a></li><li><a href="feeds/hou.xml">Houston Astros</a></li><li><a href="feeds/kc.xml">Kansas City Royals</a></li><li><a href="feeds/laa.xml">Los Angeles Angels</a></li><li><a href="feeds/lad.xml">Los Angeles Dodgers</a></li><li><a href="feeds/mia.xml">Miami Marlins</a></li><li><a href="feeds/mil.xml">Milwaukee Brewers</a></li><li><a href="feeds/min.xml">Minnesota Twins</a></li><li><a href="feeds/nym.xml">New York Mets</a></li><li><a href="feeds/nyy.xml">New York Yankees</a></li><li><a href="feeds/phi.xml">Philadelphia Phillies</a></li><li><a href="feeds/pit.xml">Pittsburgh Pirates</a></li><li><a href="feeds/sd.xml">San Diego Padres</a></li><li><a href="feeds/sea.xml">Seattle Mariners</a></li><li><a href="feeds/sf.xml">San Francisco Giants</a></li><li><a href="feeds/stl.xml">St. Louis Cardinals</a></li><li><a href="feeds/tb.xml">Tampa Bay Rays</a></li><li><a href="feeds/tex.xml">Texas Rangers</a></li><li><a href="feeds/tor.xml">Toronto Blue Jays</a></li><li><a href="feeds/wsh.xml">Washington Nationals</a></li>
+                        </ul>
+                    </noscript>
+                </div>
+            </details>
         </header>
 
         <section class="rounded-2xl bg-white p-6 shadow-sm">
             
             <div class="flex flex-col gap-8">
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-10-04</h2>
+                <div data-game-date-group data-official-date="2026-10-04">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-10-04<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-10-04-sd-at-mil-849825.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-10-04-sd-at-mil-849825.html" data-game-time="2026-10-04T20:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">SD @ MIL</div>
@@ -39,11 +128,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-10-03</h2>
+                <div data-game-date-group data-official-date="2026-10-03">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-10-03<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-10-03-sd-at-mil-849830.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-10-03-sd-at-mil-849830.html" data-game-time="2026-10-04T00:30:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">SD @ MIL</div>
@@ -57,7 +146,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-10-03-nyy-at-tb-849835.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-10-03-nyy-at-tb-849835.html" data-game-time="2026-10-03T22:30:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">NYY @ TB</div>
@@ -71,7 +160,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-10-03-atl-at-lad-849828.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-10-03-atl-at-lad-849828.html" data-game-time="2026-10-03T20:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">ATL @ LAD</div>
@@ -85,7 +174,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-10-03-cws-at-cle-849829.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-10-03-cws-at-cle-849829.html" data-game-time="2026-10-03T17:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CWS @ CLE</div>
@@ -102,11 +191,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-10-01</h2>
+                <div data-game-date-group data-official-date="2026-10-01">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-10-01<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-10-01-phi-at-atl-849844.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-10-01-phi-at-atl-849844.html" data-game-time="2026-10-02T00:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">PHI @ ATL</div>
@@ -123,11 +212,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-30</h2>
+                <div data-game-date-group data-official-date="2026-09-30">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-30<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-30-chc-at-sd-849842.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-30-chc-at-sd-849842.html" data-game-time="2026-10-01T02:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CHC @ SD</div>
@@ -141,7 +230,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-30-bos-at-nyy-849848.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-30-bos-at-nyy-849848.html" data-game-time="2026-10-01T00:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">BOS @ NYY</div>
@@ -155,7 +244,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-30-cws-at-hou-849846.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-30-cws-at-hou-849846.html" data-game-time="2026-09-30T21:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CWS @ HOU</div>
@@ -169,7 +258,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-30-phi-at-atl-849841.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-30-phi-at-atl-849841.html" data-game-time="2026-09-30T18:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">PHI @ ATL</div>
@@ -186,11 +275,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-29</h2>
+                <div data-game-date-group data-official-date="2026-09-29">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-29<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-29-chc-at-sd-849843.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-29-chc-at-sd-849843.html" data-game-time="2026-09-30T02:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CHC @ SD</div>
@@ -204,7 +293,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-29-bos-at-nyy-849851.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-29-bos-at-nyy-849851.html" data-game-time="2026-09-30T00:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">BOS @ NYY</div>
@@ -218,7 +307,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-29-cws-at-hou-849849.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-29-cws-at-hou-849849.html" data-game-time="2026-09-29T21:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CWS @ HOU</div>
@@ -232,7 +321,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-29-phi-at-atl-849845.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-29-phi-at-atl-849845.html" data-game-time="2026-09-29T18:00:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">PHI @ ATL</div>
@@ -249,11 +338,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-27</h2>
+                <div data-game-date-group data-official-date="2026-09-27">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-27<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-27-col-at-cws-824542.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-col-at-cws-824542.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">COL @ CWS</div>
@@ -267,7 +356,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-pit-at-det-824217.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-pit-at-det-824217.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">PIT @ DET</div>
@@ -281,7 +370,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-cle-at-kc-824055.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-cle-at-kc-824055.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CLE @ KC</div>
@@ -295,7 +384,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-atl-at-mia-823814.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-atl-at-mia-823814.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">ATL @ MIA</div>
@@ -309,7 +398,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-stl-at-mil-823731.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-stl-at-mil-823731.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">STL @ MIL</div>
@@ -323,7 +412,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-tex-at-min-823650.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-tex-at-min-823650.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TEX @ MIN</div>
@@ -337,7 +426,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-az-at-sd-823246.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-az-at-sd-823246.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">AZ @ SD</div>
@@ -351,7 +440,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-laa-at-sea-823084.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-laa-at-sea-823084.html" data-game-time="2026-09-27T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAA @ SEA</div>
@@ -365,7 +454,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-cin-at-tor-822761.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-cin-at-tor-822761.html" data-game-time="2026-09-27T19:07:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CIN @ TOR</div>
@@ -379,7 +468,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-hou-at-ath-824948.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-hou-at-ath-824948.html" data-game-time="2026-09-27T19:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">HOU @ ATH</div>
@@ -393,7 +482,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-chc-at-bos-824705.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-chc-at-bos-824705.html" data-game-time="2026-09-27T19:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CHC @ BOS</div>
@@ -407,7 +496,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-lad-at-sf-823164.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-lad-at-sf-823164.html" data-game-time="2026-09-27T19:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAD @ SF</div>
@@ -421,7 +510,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-tb-at-phi-823408.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-tb-at-phi-823408.html" data-game-time="2026-09-27T18:30:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TB @ PHI</div>
@@ -435,7 +524,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-27-nym-at-wsh-822679.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-27-nym-at-wsh-822679.html" data-game-time="2026-09-27T17:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">NYM @ WSH</div>
@@ -452,11 +541,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-26</h2>
+                <div data-game-date-group data-official-date="2026-09-26">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-26<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-26-hou-at-ath-824949.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-hou-at-ath-824949.html" data-game-time="2026-09-27T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">HOU @ ATH</div>
@@ -470,7 +559,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-laa-at-sea-823083.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-laa-at-sea-823083.html" data-game-time="2026-09-27T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAA @ SEA</div>
@@ -484,7 +573,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-az-at-sd-823245.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-az-at-sd-823245.html" data-game-time="2026-09-27T00:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">AZ @ SD</div>
@@ -498,7 +587,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-tb-at-phi-823407.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-tb-at-phi-823407.html" data-game-time="2026-09-26T23:15:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TB @ PHI</div>
@@ -512,7 +601,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-col-at-cws-824543.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-col-at-cws-824543.html" data-game-time="2026-09-26T23:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">COL @ CWS</div>
@@ -526,7 +615,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-cle-at-kc-824057.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-cle-at-kc-824057.html" data-game-time="2026-09-26T23:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CLE @ KC</div>
@@ -540,7 +629,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-stl-at-mil-823733.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-stl-at-mil-823733.html" data-game-time="2026-09-26T23:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">STL @ MIL</div>
@@ -554,7 +643,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-atl-at-mia-823813.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-atl-at-mia-823813.html" data-game-time="2026-09-26T20:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">ATL @ MIA</div>
@@ -568,7 +657,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-tex-at-min-823653.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-tex-at-min-823653.html" data-game-time="2026-09-26T20:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TEX @ MIN</div>
@@ -582,7 +671,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-lad-at-sf-823165.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-lad-at-sf-823165.html" data-game-time="2026-09-26T20:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAD @ SF</div>
@@ -596,7 +685,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-cin-at-tor-822759.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-cin-at-tor-822759.html" data-game-time="2026-09-26T19:07:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CIN @ TOR</div>
@@ -610,7 +699,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-pit-at-det-824219.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-pit-at-det-824219.html" data-game-time="2026-09-26T17:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">PIT @ DET</div>
@@ -624,7 +713,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-26-nym-at-wsh-822678.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-26-nym-at-wsh-822678.html" data-game-time="2026-09-26T16:35:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">NYM @ WSH</div>
@@ -641,11 +730,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-25</h2>
+                <div data-game-date-group data-official-date="2026-09-25">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-25<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-25-lad-at-sf-823167.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-lad-at-sf-823167.html" data-game-time="2026-09-26T02:15:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAD @ SF</div>
@@ -659,7 +748,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-laa-at-sea-823085.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-laa-at-sea-823085.html" data-game-time="2026-09-26T02:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAA @ SEA</div>
@@ -673,7 +762,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-hou-at-ath-824947.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-hou-at-ath-824947.html" data-game-time="2026-09-26T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">HOU @ ATH</div>
@@ -687,7 +776,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-az-at-sd-823248.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-az-at-sd-823248.html" data-game-time="2026-09-26T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">AZ @ SD</div>
@@ -701,7 +790,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-tex-at-min-823652.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-tex-at-min-823652.html" data-game-time="2026-09-26T00:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TEX @ MIN</div>
@@ -715,7 +804,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-col-at-cws-824544.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-col-at-cws-824544.html" data-game-time="2026-09-25T23:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">COL @ CWS</div>
@@ -729,7 +818,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-cle-at-kc-824058.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-cle-at-kc-824058.html" data-game-time="2026-09-25T23:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CLE @ KC</div>
@@ -743,7 +832,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-stl-at-mil-823735.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-stl-at-mil-823735.html" data-game-time="2026-09-25T23:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">STL @ MIL</div>
@@ -757,7 +846,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-atl-at-mia-823816.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-atl-at-mia-823816.html" data-game-time="2026-09-25T23:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">ATL @ MIA</div>
@@ -771,7 +860,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-cin-at-tor-822760.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-cin-at-tor-822760.html" data-game-time="2026-09-25T23:07:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CIN @ TOR</div>
@@ -785,7 +874,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-nym-at-wsh-822681.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-nym-at-wsh-822681.html" data-game-time="2026-09-25T22:45:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">NYM @ WSH</div>
@@ -799,7 +888,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-pit-at-det-824220.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-pit-at-det-824220.html" data-game-time="2026-09-25T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">PIT @ DET</div>
@@ -813,7 +902,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-tb-at-phi-823409.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-tb-at-phi-823409.html" data-game-time="2026-09-25T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TB @ PHI</div>
@@ -827,7 +916,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-chc-at-bos-824706.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-chc-at-bos-824706.html" data-game-time="2026-09-25T21:35:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CHC @ BOS</div>
@@ -841,7 +930,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-bal-at-nyy-823489.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-bal-at-nyy-823489.html" data-game-time="2026-09-25T20:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">BAL @ NYY</div>
@@ -855,7 +944,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-bal-at-nyy-823491.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-bal-at-nyy-823491.html" data-game-time="2026-09-25T20:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">BAL @ NYY</div>
@@ -869,7 +958,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-25-chc-at-bos-824703.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-25-chc-at-bos-824703.html" data-game-time="2026-09-25T17:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CHC @ BOS</div>
@@ -886,11 +975,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-24</h2>
+                <div data-game-date-group data-official-date="2026-09-24">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-24<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-24-sd-at-lad-823895.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-sd-at-lad-823895.html" data-game-time="2026-09-25T02:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">SD @ LAD</div>
@@ -904,7 +993,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-hou-at-ath-824950.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-hou-at-ath-824950.html" data-game-time="2026-09-25T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">HOU @ ATH</div>
@@ -918,7 +1007,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-laa-at-sea-823087.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-laa-at-sea-823087.html" data-game-time="2026-09-25T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAA @ SEA</div>
@@ -932,7 +1021,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-cin-at-atl-824866.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-cin-at-atl-824866.html" data-game-time="2026-09-24T23:15:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CIN @ ATL</div>
@@ -946,7 +1035,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-tb-at-nyy-823493.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-tb-at-nyy-823493.html" data-game-time="2026-09-24T23:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TB @ NYY</div>
@@ -960,7 +1049,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-cle-at-bos-824707.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-cle-at-bos-824707.html" data-game-time="2026-09-24T22:45:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CLE @ BOS</div>
@@ -974,7 +1063,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-mil-at-phi-823411.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-mil-at-phi-823411.html" data-game-time="2026-09-24T22:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIL @ PHI</div>
@@ -988,7 +1077,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-az-at-col-824298.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-az-at-col-824298.html" data-game-time="2026-09-24T19:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">AZ @ COL</div>
@@ -1002,7 +1091,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-nym-at-tex-822842.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-nym-at-tex-822842.html" data-game-time="2026-09-24T18:35:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">NYM @ TEX</div>
@@ -1016,7 +1105,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-mia-at-chc-824623.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-mia-at-chc-824623.html" data-game-time="2026-09-24T18:20:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIA @ CHC</div>
@@ -1030,7 +1119,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-cws-at-kc-824059.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-cws-at-kc-824059.html" data-game-time="2026-09-24T18:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CWS @ KC</div>
@@ -1044,7 +1133,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-24-stl-at-pit-823326.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-24-stl-at-pit-823326.html" data-game-time="2026-09-24T16:35:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">STL @ PIT</div>
@@ -1061,11 +1150,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-23</h2>
+                <div data-game-date-group data-official-date="2026-09-23">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-23<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-23-sd-at-lad-823894.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-sd-at-lad-823894.html" data-game-time="2026-09-24T02:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">SD @ LAD</div>
@@ -1079,7 +1168,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-hou-at-sea-823086.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-hou-at-sea-823086.html" data-game-time="2026-09-24T02:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">HOU @ SEA</div>
@@ -1093,7 +1182,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-laa-at-ath-824951.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-laa-at-ath-824951.html" data-game-time="2026-09-24T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAA @ ATH</div>
@@ -1107,7 +1196,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-az-at-col-824301.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-az-at-col-824301.html" data-game-time="2026-09-24T00:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">AZ @ COL</div>
@@ -1121,7 +1210,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-nym-at-tex-822841.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-nym-at-tex-822841.html" data-game-time="2026-09-24T00:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">NYM @ TEX</div>
@@ -1135,7 +1224,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-mia-at-chc-824625.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-mia-at-chc-824625.html" data-game-time="2026-09-23T23:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIA @ CHC</div>
@@ -1149,7 +1238,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-cws-at-kc-824060.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-cws-at-kc-824060.html" data-game-time="2026-09-23T23:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CWS @ KC</div>
@@ -1163,7 +1252,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-cin-at-atl-824868.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-cin-at-atl-824868.html" data-game-time="2026-09-23T23:15:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CIN @ ATL</div>
@@ -1177,7 +1266,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-cle-at-bos-824710.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-cle-at-bos-824710.html" data-game-time="2026-09-23T23:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CLE @ BOS</div>
@@ -1191,7 +1280,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-tb-at-nyy-823492.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-tb-at-nyy-823492.html" data-game-time="2026-09-23T23:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TB @ NYY</div>
@@ -1205,7 +1294,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-mil-at-phi-823410.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-mil-at-phi-823410.html" data-game-time="2026-09-23T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIL @ PHI</div>
@@ -1219,7 +1308,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-stl-at-pit-823327.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-stl-at-pit-823327.html" data-game-time="2026-09-23T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">STL @ PIT</div>
@@ -1233,7 +1322,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-tor-at-bal-824784.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-tor-at-bal-824784.html" data-game-time="2026-09-23T22:35:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TOR @ BAL</div>
@@ -1247,7 +1336,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-min-at-sf-823168.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-min-at-sf-823168.html" data-game-time="2026-09-23T19:45:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIN @ SF</div>
@@ -1261,7 +1350,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-tor-at-bal-824785.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-tor-at-bal-824785.html" data-game-time="2026-09-23T17:35:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TOR @ BAL</div>
@@ -1275,7 +1364,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-23-wsh-at-det-824223.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-23-wsh-at-det-824223.html" data-game-time="2026-09-23T17:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">WSH @ DET</div>
@@ -1292,11 +1381,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-22</h2>
+                <div data-game-date-group data-official-date="2026-09-22">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-22<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-22-sd-at-lad-823897.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-sd-at-lad-823897.html" data-game-time="2026-09-23T02:10:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">SD @ LAD</div>
@@ -1310,7 +1399,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-min-at-sf-823166.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-min-at-sf-823166.html" data-game-time="2026-09-23T01:45:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIN @ SF</div>
@@ -1324,7 +1413,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-laa-at-ath-824953.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-laa-at-ath-824953.html" data-game-time="2026-09-23T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">LAA @ ATH</div>
@@ -1338,7 +1427,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-hou-at-sea-823089.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-hou-at-sea-823089.html" data-game-time="2026-09-23T01:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">HOU @ SEA</div>
@@ -1352,7 +1441,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-az-at-col-824302.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-az-at-col-824302.html" data-game-time="2026-09-23T00:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">AZ @ COL</div>
@@ -1366,7 +1455,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-nym-at-tex-822840.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-nym-at-tex-822840.html" data-game-time="2026-09-23T00:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">NYM @ TEX</div>
@@ -1380,7 +1469,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-mia-at-chc-824624.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-mia-at-chc-824624.html" data-game-time="2026-09-22T23:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIA @ CHC</div>
@@ -1394,7 +1483,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-cws-at-kc-824061.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-cws-at-kc-824061.html" data-game-time="2026-09-22T23:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CWS @ KC</div>
@@ -1408,7 +1497,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-cin-at-atl-824867.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-cin-at-atl-824867.html" data-game-time="2026-09-22T23:15:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CIN @ ATL</div>
@@ -1422,7 +1511,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-tb-at-nyy-823494.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-tb-at-nyy-823494.html" data-game-time="2026-09-22T23:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TB @ NYY</div>
@@ -1436,7 +1525,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-cle-at-bos-824709.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-cle-at-bos-824709.html" data-game-time="2026-09-22T22:45:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">CLE @ BOS</div>
@@ -1450,7 +1539,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-wsh-at-det-824222.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-wsh-at-det-824222.html" data-game-time="2026-09-22T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">WSH @ DET</div>
@@ -1464,7 +1553,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-mil-at-phi-823412.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-mil-at-phi-823412.html" data-game-time="2026-09-22T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIL @ PHI</div>
@@ -1478,7 +1567,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-stl-at-pit-823328.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-stl-at-pit-823328.html" data-game-time="2026-09-22T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">STL @ PIT</div>
@@ -1492,7 +1581,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-22-tb-at-nyy-823543.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-22-tb-at-nyy-823543.html" data-game-time="2026-09-22T17:05:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TB @ NYY</div>
@@ -1509,11 +1598,11 @@
                     </div>
                 </div>
                 
-                <div>
-                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-21</h2>
+                <div data-game-date-group data-official-date="2026-09-21">
+                    <h2 class="mb-3 text-2xl font-medium tracking-tight text-gray-900">2026-09-21<span class="text-sm font-normal text-gray-500" data-local-group-date></span></h2>
                     <div class="flex flex-col divide-y divide-gray-200">
                         
-                        <a href="games/2026-09-21-min-at-sf-823169.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-21-min-at-sf-823169.html" data-game-time="2026-09-22T01:45:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">MIN @ SF</div>
@@ -1527,7 +1616,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-21-wsh-at-det-824221.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-21-wsh-at-det-824221.html" data-game-time="2026-09-21T22:40:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">WSH @ DET</div>
@@ -1541,7 +1630,7 @@
                             </div>
                         </a>
                         
-                        <a href="games/2026-09-21-tor-at-bal-824787.html" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
+                        <a href="games/2026-09-21-tor-at-bal-824787.html" data-game-time="2026-09-21T22:35:00Z" class="flex flex-col gap-2 py-4 transition hover:bg-gray-50 first:pt-0 last:pb-0">
                             <div class="flex items-start justify-between gap-4">
                                 <div class="min-w-0">
                                     <div class="text-lg font-bold">TOR @ BAL</div>
@@ -1562,5 +1651,73 @@
             
         </section>
     </main>
+    <script>
+        (() => {
+            const scope = document.getElementById("rss-scope");
+            const feedUrl = document.getElementById("rss-url");
+            const feedLink = document.getElementById("rss-open");
+            const status = document.getElementById("rss-status");
+            scope.addEventListener("change", () => {
+                feedUrl.value = scope.value;
+                // Relative links also work in the local preview.
+                feedLink.href = `feeds/${new URL(scope.value).pathname.split("/").pop()}`;
+                status.textContent = "";
+            });
+            document.getElementById("rss-copy").addEventListener("click", async () => {
+                try {
+                    await navigator.clipboard.writeText(feedUrl.value);
+                    status.textContent = "Feed URL copied. Paste it into your RSS reader.";
+                } catch {
+                    feedUrl.focus();
+                    feedUrl.select();
+                    status.textContent = "Select and copy the feed URL above.";
+                }
+            });
+            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            const formatter = new Intl.DateTimeFormat("en-US", {
+                timeZone,
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                hourCycle: "h23",
+            });
+            document.querySelectorAll("[data-local-time]").forEach((element) => {
+                const value = element.dataset.localTime;
+                // Only convert timestamps with an explicit timezone, never a bare MLB date.
+                if (!/(?:Z|[+-]\d{2}:\d{2})$/i.test(value)) return;
+                const date = new Date(value);
+                if (Number.isNaN(date.getTime())) return;
+                const parts = Object.fromEntries(
+                    formatter.formatToParts(date).map(({ type, value }) => [type, value]),
+                );
+                const localTime = `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}`;
+                const utcTime = date.toISOString().slice(0, 16).replace("T", " ");
+                element.textContent = localTime === utcTime
+                    ? ""
+                    : ` (${element.dataset.localLabel || ""}${localTime} ${timeZone})`;
+            });
+            document.querySelectorAll("[data-game-date-group]").forEach((group) => {
+                const localDates = new Set();
+                group.querySelectorAll("[data-game-time]").forEach((element) => {
+                    const value = element.dataset.gameTime;
+                    if (!/(?:Z|[+-]\d{2}:\d{2})$/i.test(value)) return;
+                    const date = new Date(value);
+                    if (Number.isNaN(date.getTime())) return;
+                    const parts = Object.fromEntries(
+                        formatter.formatToParts(date).map(({ type, value }) => [type, value]),
+                    );
+                    localDates.add(`${parts.year}-${parts.month}-${parts.day}`);
+                });
+                const dates = [...localDates].sort();
+                if (!dates.length) return;
+                const dateRange = dates.length === 1 ? dates[0] : `${dates[0]} – ${dates[dates.length - 1]}`;
+                group.querySelector("[data-local-group-date]").textContent = dateRange === group.dataset.officialDate
+                    ? ""
+                    : ` (${dateRange} ${timeZone})`;
+            });
+        })();
+    </script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Replay unavailable | MLB Visual Game Replay</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #f3f4f6;
+            color: #111827;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+        main { max-width: 896px; margin: 0 auto; padding: 40px 16px; }
+        .card { background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 1px 3px rgba(0, 0, 0, .08); }
+        .brand { color: #111827; font-size: 24px; font-weight: 800; letter-spacing: -.035em; text-decoration: none; }
+        .message { max-width: 480px; margin: 0 auto; padding: 56px 0 40px; text-align: center; }
+        .code { margin: 0; color: #d1d5db; font-size: clamp(80px, 18vw, 120px); font-weight: 900; line-height: 1; letter-spacing: -.06em; }
+        h1 { margin: 24px 0 16px; font-size: clamp(24px, 5vw, 30px); letter-spacing: -.025em; line-height: 1.25; }
+        p { font-size: 16px; line-height: 1.7; color: #4b5563; }
+        .hint { margin: 20px 0 0; font-size: 14px; color: #6b7280; }
+        .button { display: inline-block; margin-top: 28px; padding: 12px 20px; border-radius: 10px; background: #111827; color: #fff; font-size: 14px; font-weight: 600; text-decoration: none; }
+        .button:hover { background: #374151; }
+        a:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }
+        @media (max-width: 480px) {
+            main { padding-top: 24px; }
+            .card { padding: 24px 20px; }
+            .brand { font-size: 21px; }
+            .message { padding: 40px 0 24px; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="card" aria-labelledby="unavailable-title">
+            <header><a class="brand" href="https://mlb-visual-game-replay.win/">MLB Visual Game Replay</a></header>
+            <div class="message">
+                <p class="code">404</p>
+                <h1 id="unavailable-title">This replay is unavailable</h1>
+                <p>Replay pages are available for the past two weeks. Games older than 14 days are no longer available to replay.</p>
+                <p class="hint">This link may have expired, or the page may not exist.</p>
+                <a class="button" href="https://mlb-visual-game-replay.win/">Browse recent games</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
