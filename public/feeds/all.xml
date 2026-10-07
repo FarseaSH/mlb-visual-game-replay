@@ -5,7 +5,19 @@
     <description>Spoiler-free replay updates: All games. Replay pages are available for 14 days.</description>
     <language>en-us</language>
     <atom:link href="https://mlb-visual-game-replay.win/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 06 Oct 2026 03:30:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 01:30:58 GMT</lastBuildDate>
+    <item>
+      <title>LAD @ ATL — 2026-10-06 — #849819</title>
+      <link>https://mlb-visual-game-replay.win/games/2026-10-06-lad-at-atl-849819.html</link>
+      <guid isPermaLink="false">mlb-game-849819</guid>
+      <pubDate>Tue, 06 Oct 2026 22:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Los Angeles Dodgers</strong> at <strong>Atlanta Braves</strong></p>
+<p><strong>Venue:</strong> Truist Park</p>
+<p><strong>LAD starting pitcher:</strong> Yamamoto, Y</p>
+<p><strong>ATL starting pitcher:</strong> Sale, C</p>
+<p>&#160;</p>
+<p><a href="https://mlb-visual-game-replay.win/games/2026-10-06-lad-at-atl-849819.html">Open interactive replay</a></p>]]></description>
+    </item>
     <item>
       <title>NYY @ TB — 2026-10-05 — #849839</title>
       <link>https://mlb-visual-game-replay.win/games/2026-10-05-nyy-at-tb-849839.html</link>
@@ -1073,186 +1085,6 @@
 <p><strong>DET starting pitcher:</strong> Valdez, F</p>
 <p>&#160;</p>
 <p><a href="https://mlb-visual-game-replay.win/games/2026-09-23-wsh-at-det-824223.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>SD @ LAD — 2026-09-22 — #823897</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-sd-at-lad-823897.html</link>
-      <guid isPermaLink="false">mlb-game-823897</guid>
-      <pubDate>Wed, 23 Sep 2026 02:10:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>San Diego Padres</strong> at <strong>Los Angeles Dodgers</strong></p>
-<p><strong>Venue:</strong> UNIQLO Field at Dodger Stadium</p>
-<p><strong>SD starting pitcher:</strong> King, M</p>
-<p><strong>LAD starting pitcher:</strong> Stewart, B</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-sd-at-lad-823897.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>MIN @ SF — 2026-09-22 — #823166</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-min-at-sf-823166.html</link>
-      <guid isPermaLink="false">mlb-game-823166</guid>
-      <pubDate>Wed, 23 Sep 2026 01:45:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Minnesota Twins</strong> at <strong>San Francisco Giants</strong></p>
-<p><strong>Venue:</strong> Oracle Park</p>
-<p><strong>MIN starting pitcher:</strong> Bradley, T</p>
-<p><strong>SF starting pitcher:</strong> Molina, A</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-min-at-sf-823166.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>LAA @ ATH — 2026-09-22 — #824953</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-laa-at-ath-824953.html</link>
-      <guid isPermaLink="false">mlb-game-824953</guid>
-      <pubDate>Wed, 23 Sep 2026 01:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Los Angeles Angels</strong> at <strong>Athletics</strong></p>
-<p><strong>Venue:</strong> Sutter Health Park</p>
-<p><strong>LAA starting pitcher:</strong> Kikuchi, Y</p>
-<p><strong>ATH starting pitcher:</strong> Basso, B</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-laa-at-ath-824953.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>HOU @ SEA — 2026-09-22 — #823089</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-hou-at-sea-823089.html</link>
-      <guid isPermaLink="false">mlb-game-823089</guid>
-      <pubDate>Wed, 23 Sep 2026 01:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Houston Astros</strong> at <strong>Seattle Mariners</strong></p>
-<p><strong>Venue:</strong> T-Mobile Park</p>
-<p><strong>HOU starting pitcher:</strong> Javier, C</p>
-<p><strong>SEA starting pitcher:</strong> Gilbert, L</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-hou-at-sea-823089.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>AZ @ COL — 2026-09-22 — #824302</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-az-at-col-824302.html</link>
-      <guid isPermaLink="false">mlb-game-824302</guid>
-      <pubDate>Wed, 23 Sep 2026 00:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Arizona Diamondbacks</strong> at <strong>Colorado Rockies</strong></p>
-<p><strong>Venue:</strong> Coors Field</p>
-<p><strong>AZ starting pitcher:</strong> Soroka, M</p>
-<p><strong>COL starting pitcher:</strong> Freeland, K</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-az-at-col-824302.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>NYM @ TEX — 2026-09-22 — #822840</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-nym-at-tex-822840.html</link>
-      <guid isPermaLink="false">mlb-game-822840</guid>
-      <pubDate>Wed, 23 Sep 2026 00:05:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>New York Mets</strong> at <strong>Texas Rangers</strong></p>
-<p><strong>Venue:</strong> Globe Life Field</p>
-<p><strong>NYM starting pitcher:</strong> Manaea, S</p>
-<p><strong>TEX starting pitcher:</strong> Gore, M</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-nym-at-tex-822840.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>MIA @ CHC — 2026-09-22 — #824624</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-mia-at-chc-824624.html</link>
-      <guid isPermaLink="false">mlb-game-824624</guid>
-      <pubDate>Tue, 22 Sep 2026 23:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Miami Marlins</strong> at <strong>Chicago Cubs</strong></p>
-<p><strong>Venue:</strong> Wrigley Field</p>
-<p><strong>MIA starting pitcher:</strong> Junk, J</p>
-<p><strong>CHC starting pitcher:</strong> Imanaga, S</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-mia-at-chc-824624.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>CWS @ KC — 2026-09-22 — #824061</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-cws-at-kc-824061.html</link>
-      <guid isPermaLink="false">mlb-game-824061</guid>
-      <pubDate>Tue, 22 Sep 2026 23:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Chicago White Sox</strong> at <strong>Kansas City Royals</strong></p>
-<p><strong>Venue:</strong> Kauffman Stadium</p>
-<p><strong>CWS starting pitcher:</strong> Kay, A</p>
-<p><strong>KC starting pitcher:</strong> Lynch IV, D</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-cws-at-kc-824061.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>CIN @ ATL — 2026-09-22 — #824867</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-cin-at-atl-824867.html</link>
-      <guid isPermaLink="false">mlb-game-824867</guid>
-      <pubDate>Tue, 22 Sep 2026 23:15:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Cincinnati Reds</strong> at <strong>Atlanta Braves</strong></p>
-<p><strong>Venue:</strong> Truist Park</p>
-<p><strong>CIN starting pitcher:</strong> Williamson, B</p>
-<p><strong>ATL starting pitcher:</strong> Ritchie, J</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-cin-at-atl-824867.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>TB @ NYY — 2026-09-22 — #823494</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-tb-at-nyy-823494.html</link>
-      <guid isPermaLink="false">mlb-game-823494</guid>
-      <pubDate>Tue, 22 Sep 2026 23:05:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Tampa Bay Rays</strong> at <strong>New York Yankees</strong></p>
-<p><strong>Venue:</strong> Yankee Stadium</p>
-<p><strong>TB starting pitcher:</strong> Rasmussen, D</p>
-<p><strong>NYY starting pitcher:</strong> Fried, M</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-tb-at-nyy-823494.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>CLE @ BOS — 2026-09-22 — #824709</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-cle-at-bos-824709.html</link>
-      <guid isPermaLink="false">mlb-game-824709</guid>
-      <pubDate>Tue, 22 Sep 2026 22:45:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Cleveland Guardians</strong> at <strong>Boston Red Sox</strong></p>
-<p><strong>Venue:</strong> Fenway Park</p>
-<p><strong>CLE starting pitcher:</strong> Messick, P</p>
-<p><strong>BOS starting pitcher:</strong> Tolle, P</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-cle-at-bos-824709.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>WSH @ DET — 2026-09-22 — #824222</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-wsh-at-det-824222.html</link>
-      <guid isPermaLink="false">mlb-game-824222</guid>
-      <pubDate>Tue, 22 Sep 2026 22:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Washington Nationals</strong> at <strong>Detroit Tigers</strong></p>
-<p><strong>Venue:</strong> Comerica Park</p>
-<p><strong>WSH starting pitcher:</strong> Cornelio, R</p>
-<p><strong>DET starting pitcher:</strong> Anderson, D</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-wsh-at-det-824222.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>MIL @ PHI — 2026-09-22 — #823412</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-mil-at-phi-823412.html</link>
-      <guid isPermaLink="false">mlb-game-823412</guid>
-      <pubDate>Tue, 22 Sep 2026 22:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Milwaukee Brewers</strong> at <strong>Philadelphia Phillies</strong></p>
-<p><strong>Venue:</strong> Citizens Bank Park</p>
-<p><strong>MIL starting pitcher:</strong> May, D</p>
-<p><strong>PHI starting pitcher:</strong> Wheeler, Z</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-mil-at-phi-823412.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>STL @ PIT — 2026-09-22 — #823328</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-stl-at-pit-823328.html</link>
-      <guid isPermaLink="false">mlb-game-823328</guid>
-      <pubDate>Tue, 22 Sep 2026 22:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>St. Louis Cardinals</strong> at <strong>Pittsburgh Pirates</strong></p>
-<p><strong>Venue:</strong> PNC Park</p>
-<p><strong>STL starting pitcher:</strong> Pallante, A</p>
-<p><strong>PIT starting pitcher:</strong> Jones, J</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-stl-at-pit-823328.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>TB @ NYY — 2026-09-22 — #823543</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-22-tb-at-nyy-823543.html</link>
-      <guid isPermaLink="false">mlb-game-823543</guid>
-      <pubDate>Tue, 22 Sep 2026 17:05:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Tampa Bay Rays</strong> at <strong>New York Yankees</strong></p>
-<p><strong>Venue:</strong> Yankee Stadium</p>
-<p><strong>TB starting pitcher:</strong> Martinez, N</p>
-<p><strong>NYY starting pitcher:</strong> Rodón, C</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-22-tb-at-nyy-823543.html">Open interactive replay</a></p>]]></description>
     </item>
   </channel>
 </rss>
