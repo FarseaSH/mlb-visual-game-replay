@@ -5,7 +5,19 @@
     <description>Spoiler-free replay updates: Cleveland Guardians. Replay pages are available for 14 days.</description>
     <language>en-us</language>
     <atom:link href="https://mlb-visual-game-replay.win/feeds/cle.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 06 Oct 2026 00:15:29 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 23:45:29 GMT</lastBuildDate>
+    <item>
+      <title>CLE @ CWS — 2026-10-07 — #849833</title>
+      <link>https://mlb-visual-game-replay.win/games/2026-10-07-cle-at-cws-849833.html</link>
+      <guid isPermaLink="false">mlb-game-849833</guid>
+      <pubDate>Wed, 07 Oct 2026 20:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Cleveland Guardians</strong> at <strong>Chicago White Sox</strong></p>
+<p><strong>Venue:</strong> Rate Field</p>
+<p><strong>CLE starting pitcher:</strong> Espino, D</p>
+<p><strong>CWS starting pitcher:</strong> Newcomb, S</p>
+<p>&#160;</p>
+<p><a href="https://mlb-visual-game-replay.win/games/2026-10-07-cle-at-cws-849833.html">Open interactive replay</a></p>]]></description>
+    </item>
     <item>
       <title>CWS @ CLE — 2026-10-05 — #849834</title>
       <link>https://mlb-visual-game-replay.win/games/2026-10-05-cws-at-cle-849834.html</link>
@@ -77,18 +89,6 @@
 <p><strong>BOS starting pitcher:</strong> Suarez, R</p>
 <p>&#160;</p>
 <p><a href="https://mlb-visual-game-replay.win/games/2026-09-24-cle-at-bos-824707.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>CLE @ BOS — 2026-09-23 — #824710</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-23-cle-at-bos-824710.html</link>
-      <guid isPermaLink="false">mlb-game-824710</guid>
-      <pubDate>Wed, 23 Sep 2026 23:10:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Cleveland Guardians</strong> at <strong>Boston Red Sox</strong></p>
-<p><strong>Venue:</strong> Fenway Park</p>
-<p><strong>CLE starting pitcher:</strong> Griffin, F</p>
-<p><strong>BOS starting pitcher:</strong> Gray, S</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-23-cle-at-bos-824710.html">Open interactive replay</a></p>]]></description>
     </item>
   </channel>
 </rss>
