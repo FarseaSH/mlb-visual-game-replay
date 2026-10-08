@@ -1,5 +1,25 @@
 [
   {
+    "game_pk": 849838,
+    "official_date": "2026-10-07",
+    "game_datetime": "2026-10-08T00:00:00Z",
+    "away_label": "TB",
+    "home_label": "NYY",
+    "away_name": "Tampa Bay Rays",
+    "home_name": "New York Yankees",
+    "away_score": 4,
+    "home_score": 3,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Martinez, N",
+    "home_starting_pitcher": "Fried, M",
+    "html_path": "games/2026-10-07-tb-at-nyy-849838.html",
+    "away_team_id": 139,
+    "home_team_id": 147,
+    "published_at": "2026-10-08T03:45:39.883692+00:00",
+    "title": "TB @ NYY",
+    "final_score": "TB 4 - 3 NYY"
+  },
+  {
     "game_pk": 849822,
     "official_date": "2026-10-07",
     "game_datetime": "2026-10-07T22:00:00Z",
