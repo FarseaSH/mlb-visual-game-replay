@@ -1,5 +1,25 @@
 [
   {
+    "game_pk": 849822,
+    "official_date": "2026-10-07",
+    "game_datetime": "2026-10-07T22:00:00Z",
+    "away_label": "LAD",
+    "home_label": "ATL",
+    "away_name": "Los Angeles Dodgers",
+    "home_name": "Atlanta Braves",
+    "away_score": 4,
+    "home_score": 1,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "Glasnow, T",
+    "home_starting_pitcher": "Mahle, T",
+    "html_path": "games/2026-10-07-lad-at-atl-849822.html",
+    "away_team_id": 119,
+    "home_team_id": 144,
+    "published_at": "2026-10-08T01:15:41.384991+00:00",
+    "title": "LAD @ ATL",
+    "final_score": "LAD 4 - 1 ATL"
+  },
+  {
     "game_pk": 849833,
     "official_date": "2026-10-07",
     "game_datetime": "2026-10-07T20:00:00Z",
