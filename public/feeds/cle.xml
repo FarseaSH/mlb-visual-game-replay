@@ -5,7 +5,19 @@
     <description>Spoiler-free replay updates: Cleveland Guardians. Replay pages are available for 14 days.</description>
     <language>en-us</language>
     <atom:link href="https://mlb-visual-game-replay.win/feeds/cle.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 09 Oct 2026 04:15:33 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 03:45:34 GMT</lastBuildDate>
+    <item>
+      <title>CWS @ CLE — 2026-10-10 — #849831</title>
+      <link>https://mlb-visual-game-replay.win/games/2026-10-10-cws-at-cle-849831.html</link>
+      <guid isPermaLink="false">mlb-game-849831</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Chicago White Sox</strong> at <strong>Cleveland Guardians</strong></p>
+<p><strong>Venue:</strong> Progressive Field</p>
+<p><strong>CWS starting pitcher:</strong> Burke, S</p>
+<p><strong>CLE starting pitcher:</strong> Williams, G</p>
+<p>&#160;</p>
+<p><a href="https://mlb-visual-game-replay.win/games/2026-10-10-cws-at-cle-849831.html">Open interactive replay</a></p>]]></description>
+    </item>
     <item>
       <title>CLE @ CWS — 2026-10-08 — #849832</title>
       <link>https://mlb-visual-game-replay.win/games/2026-10-08-cle-at-cws-849832.html</link>
@@ -65,30 +77,6 @@
 <p><strong>KC starting pitcher:</strong> Lynch IV, D</p>
 <p>&#160;</p>
 <p><a href="https://mlb-visual-game-replay.win/games/2026-09-27-cle-at-kc-824055.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>CLE @ KC — 2026-09-26 — #824057</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-26-cle-at-kc-824057.html</link>
-      <guid isPermaLink="false">mlb-game-824057</guid>
-      <pubDate>Sat, 26 Sep 2026 23:10:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Cleveland Guardians</strong> at <strong>Kansas City Royals</strong></p>
-<p><strong>Venue:</strong> Kauffman Stadium</p>
-<p><strong>CLE starting pitcher:</strong> Bibee, T</p>
-<p><strong>KC starting pitcher:</strong> Wacha, M</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-26-cle-at-kc-824057.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>CLE @ KC — 2026-09-25 — #824058</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-09-25-cle-at-kc-824058.html</link>
-      <guid isPermaLink="false">mlb-game-824058</guid>
-      <pubDate>Fri, 25 Sep 2026 23:40:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Cleveland Guardians</strong> at <strong>Kansas City Royals</strong></p>
-<p><strong>Venue:</strong> Kauffman Stadium</p>
-<p><strong>CLE starting pitcher:</strong> Williams, G</p>
-<p><strong>KC starting pitcher:</strong> Cameron, N</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-09-25-cle-at-kc-824058.html">Open interactive replay</a></p>]]></description>
     </item>
   </channel>
 </rss>
