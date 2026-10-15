@@ -1,5 +1,25 @@
 [
   {
+    "game_pk": 849818,
+    "official_date": "2026-10-15",
+    "game_datetime": "2026-10-15T17:00:00Z",
+    "away_label": "TB",
+    "home_label": "CLE",
+    "away_name": "Tampa Bay Rays",
+    "home_name": "Cleveland Guardians",
+    "away_score": 2,
+    "home_score": 3,
+    "venue_name": "Progressive Field",
+    "away_starting_pitcher": "Jax, G",
+    "home_starting_pitcher": "Williams, G",
+    "html_path": "games/2026-10-15-tb-at-cle-849818.html",
+    "away_team_id": 139,
+    "home_team_id": 114,
+    "published_at": "2026-10-15T19:45:29.654984+00:00",
+    "title": "TB @ CLE",
+    "final_score": "TB 2 - 3 CLE"
+  },
+  {
     "game_pk": 849811,
     "official_date": "2026-10-14",
     "game_datetime": "2026-10-15T00:00:00Z",
@@ -418,25 +438,5 @@
     "published_at": "2026-10-05T02:45:42.428438+00:00",
     "title": "CWS @ CLE",
     "final_score": "CWS 3 - 0 CLE"
-  },
-  {
-    "game_pk": 849844,
-    "official_date": "2026-10-01",
-    "game_datetime": "2026-10-02T00:00:00Z",
-    "away_label": "PHI",
-    "home_label": "ATL",
-    "away_name": "Philadelphia Phillies",
-    "home_name": "Atlanta Braves",
-    "away_score": 2,
-    "home_score": 6,
-    "venue_name": "Truist Park",
-    "away_starting_pitcher": "Nola, A",
-    "home_starting_pitcher": "Kerr, R",
-    "html_path": "games/2026-10-01-phi-at-atl-849844.html",
-    "away_team_id": 143,
-    "home_team_id": 144,
-    "published_at": "2026-10-05T02:45:42.428438+00:00",
-    "title": "PHI @ ATL",
-    "final_score": "PHI 2 - 6 ATL"
   }
 ]
