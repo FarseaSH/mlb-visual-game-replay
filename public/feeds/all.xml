@@ -5,7 +5,19 @@
     <description>Spoiler-free replay updates: All games. Replay pages are available for 14 days.</description>
     <language>en-us</language>
     <atom:link href="https://mlb-visual-game-replay.win/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 19 Oct 2026 00:15:35 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 03:15:25 GMT</lastBuildDate>
+    <item>
+      <title>CLE @ TB — 2026-10-19 — #849815</title>
+      <link>https://mlb-visual-game-replay.win/games/2026-10-19-cle-at-tb-849815.html</link>
+      <guid isPermaLink="false">mlb-game-849815</guid>
+      <pubDate>Tue, 20 Oct 2026 00:08:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Cleveland Guardians</strong> at <strong>Tampa Bay Rays</strong></p>
+<p><strong>Venue:</strong> Tropicana Field</p>
+<p><strong>CLE starting pitcher:</strong> Armstrong, S</p>
+<p><strong>TB starting pitcher:</strong> Peralta, F</p>
+<p>&#160;</p>
+<p><a href="https://mlb-visual-game-replay.win/games/2026-10-19-cle-at-tb-849815.html">Open interactive replay</a></p>]]></description>
+    </item>
     <item>
       <title>TB @ CLE — 2026-10-18 — #849817</title>
       <link>https://mlb-visual-game-replay.win/games/2026-10-18-tb-at-cle-849817.html</link>
@@ -209,30 +221,6 @@
 <p><strong>ATL starting pitcher:</strong> Sale, C</p>
 <p>&#160;</p>
 <p><a href="https://mlb-visual-game-replay.win/games/2026-10-06-lad-at-atl-849819.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>NYY @ TB — 2026-10-05 — #849839</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-10-05-nyy-at-tb-849839.html</link>
-      <guid isPermaLink="false">mlb-game-849839</guid>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>New York Yankees</strong> at <strong>Tampa Bay Rays</strong></p>
-<p><strong>Venue:</strong> Tropicana Field</p>
-<p><strong>NYY starting pitcher:</strong> Schlittler, C</p>
-<p><strong>TB starting pitcher:</strong> Peralta, F</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-10-05-nyy-at-tb-849839.html">Open interactive replay</a></p>]]></description>
-    </item>
-    <item>
-      <title>CWS @ CLE — 2026-10-05 — #849834</title>
-      <link>https://mlb-visual-game-replay.win/games/2026-10-05-cws-at-cle-849834.html</link>
-      <guid isPermaLink="false">mlb-game-849834</guid>
-      <pubDate>Mon, 05 Oct 2026 21:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Chicago White Sox</strong> at <strong>Cleveland Guardians</strong></p>
-<p><strong>Venue:</strong> Progressive Field</p>
-<p><strong>CWS starting pitcher:</strong> Kay, A</p>
-<p><strong>CLE starting pitcher:</strong> Williams, G</p>
-<p>&#160;</p>
-<p><a href="https://mlb-visual-game-replay.win/games/2026-10-05-cws-at-cle-849834.html">Open interactive replay</a></p>]]></description>
     </item>
   </channel>
 </rss>
