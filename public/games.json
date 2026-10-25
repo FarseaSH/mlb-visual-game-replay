@@ -1,5 +1,25 @@
 [
   {
+    "game_pk": 849802,
+    "official_date": "2026-10-24",
+    "game_datetime": "2026-10-25T00:00:00Z",
+    "away_label": "TB",
+    "home_label": "MIL",
+    "away_name": "Tampa Bay Rays",
+    "home_name": "Milwaukee Brewers",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "American Family Field",
+    "away_starting_pitcher": "Rasmussen, D",
+    "home_starting_pitcher": "Henderson, L",
+    "html_path": "games/2026-10-24-tb-at-mil-849802.html",
+    "away_team_id": 139,
+    "home_team_id": 158,
+    "published_at": "2026-10-25T04:15:35.230576+00:00",
+    "title": "TB @ MIL",
+    "final_score": "TB 4 - 5 MIL"
+  },
+  {
     "game_pk": 849805,
     "official_date": "2026-10-23",
     "game_datetime": "2026-10-24T00:00:00Z",
@@ -218,25 +238,5 @@
     "published_at": "2026-10-12T03:45:32.602963+00:00",
     "title": "LAD @ MIL",
     "final_score": "LAD 1 - 2 MIL"
-  },
-  {
-    "game_pk": 849831,
-    "official_date": "2026-10-10",
-    "game_datetime": "2026-10-11T00:00:00Z",
-    "away_label": "CWS",
-    "home_label": "CLE",
-    "away_name": "Chicago White Sox",
-    "home_name": "Cleveland Guardians",
-    "away_score": 0,
-    "home_score": 2,
-    "venue_name": "Progressive Field",
-    "away_starting_pitcher": "Burke, S",
-    "home_starting_pitcher": "Williams, G",
-    "html_path": "games/2026-10-10-cws-at-cle-849831.html",
-    "away_team_id": 145,
-    "home_team_id": 114,
-    "published_at": "2026-10-11T03:45:34.693157+00:00",
-    "title": "CWS @ CLE",
-    "final_score": "CWS 0 - 2 CLE"
   }
 ]
