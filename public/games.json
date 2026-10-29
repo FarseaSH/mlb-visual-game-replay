@@ -1,5 +1,25 @@
 [
   {
+    "game_pk": 849799,
+    "official_date": "2026-10-28",
+    "game_datetime": "2026-10-29T00:00:00Z",
+    "away_label": "MIL",
+    "home_label": "TB",
+    "away_name": "Milwaukee Brewers",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 4,
+    "home_score": 1,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Misiorowski, J",
+    "home_starting_pitcher": "Rasmussen, D",
+    "html_path": "games/2026-10-28-mil-at-tb-849799.html",
+    "away_team_id": 158,
+    "home_team_id": 139,
+    "published_at": "2026-10-29T04:15:48.306511+00:00",
+    "title": "MIL @ TB",
+    "final_score": "MIL 4 - 1 TB"
+  },
+  {
     "game_pk": 849803,
     "official_date": "2026-10-27",
     "game_datetime": "2026-10-28T00:00:00Z",
@@ -178,25 +198,5 @@
     "published_at": "2026-10-15T19:45:29.654984+00:00",
     "title": "TB @ CLE",
     "final_score": "TB 2 - 3 CLE"
-  },
-  {
-    "game_pk": 849811,
-    "official_date": "2026-10-14",
-    "game_datetime": "2026-10-15T00:00:00Z",
-    "away_label": "MIL",
-    "home_label": "LAD",
-    "away_name": "Milwaukee Brewers",
-    "home_name": "Los Angeles Dodgers",
-    "away_score": 6,
-    "home_score": 2,
-    "venue_name": "UNIQLO Field at Dodger Stadium",
-    "away_starting_pitcher": "Gasser, R",
-    "home_starting_pitcher": "Snell, B",
-    "html_path": "games/2026-10-14-mil-at-lad-849811.html",
-    "away_team_id": 158,
-    "home_team_id": 119,
-    "published_at": "2026-10-15T03:30:32.597296+00:00",
-    "title": "MIL @ LAD",
-    "final_score": "MIL 6 - 2 LAD"
   }
 ]
